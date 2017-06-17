@@ -25,8 +25,14 @@
       </ul>
     </nav>  <!-- End of Nav Bar -->
 
+    <!-- TO ADD / TO DO?
+    source/origin/story of beans?  -why pay a premium price?
+    how to get some glorious coffee? -->
+
     <header class="top aTitleSpacing">
-      <h1>Sanders Bros Coffee</h1>
+      <div class = 'headerImage'>
+        <img id="headerLogo" src="images/logo/Distressed_SandersBrosCoffee.png" class =  "headerImageProps" alt="Sanders Bros Coffee">
+      </div>
     </header>
 
 <section>
@@ -34,7 +40,10 @@
   <p>
     Pug helvetica letterpress, kale chips chillwave tousled craft beer. IPhone brunch humblebrag, meditation chartreuse jianbing chillwave umami vaporware ramps occupy air plant drinking vinegar. Cray asymmetrical flannel, pug sustainable enamel pin copper mug celiac live-edge vaporware pour-over austin. Green juice woke meditation echo park kinfolk. Affogato literally freegan tumblr swag vinyl meh, venmo activated charcoal craft beer fashion axe. Authentic banjo pork belly ugh four loko. Lo-fi wayfarers semiotics disrupt, franzen glossier salvia banh mi fap drinking vinegar seitan bicycle rights aesthetic.
   </p>
-</section>
+  <div class = 'carImage'>
+    <img id="headerCarLogo" src="images/logo/Distressed_Car.png" class =  "carProps" alt="Sanders Bros Coffee">
+  </div>
+</section>  <!-- End 'home' section -->
 
 <section>
   <a name="roasting" class = 'aTitleShading'>The Roasting Process</a>
@@ -43,7 +52,10 @@
   </p><p>
 	  XOXO health goth iceland cloud bread, blog ugh drinking vinegar brooklyn. Polaroid squid raclette stumptown prism pug. Drinking vinegar cornhole paleo banjo humblebrag you probably haven't heard of them. Flexitarian pour-over food truck bitters, narwhal pitchfork brooklyn blue bottle vegan chillwave pinterest four loko tattooed sustainable. Wolf godard cronut, woke thundercats man braid kale chips vice snackwave tacos. Retro flannel ennui, godard meditation before they sold out flexitarian next level roof party iPhone church-key kitsch narwhal YOLO. Cloud bread knausgaard pug direct trade, small batch poutine flexitarian freegan actually four dollar toast normcore jianbing
   </p>
-</section>
+  <div class = 'carImage'>
+    <img id="headerCarLogo" src="images/logo/Distressed_Car.png" class =  "carProps" alt="Sanders Bros Coffee">
+  </div>
+</section>  <!-- End 'roasting' section -->
 
 <section>
   <a name="coffee" class = 'aTitleShading'>Our Coffee</a>
@@ -54,58 +66,27 @@
   Schlitz affogato godard venmo shabby chic church-key, sustainable prism mlkshk hammock actually. Wolf pop-up artisan, narwhal next level typewriter dreamcatcher try-hard paleo air plant kogi. Offal aesthetic dreamcatcher twee, woke plaid cray fanny pack. Lumbersexual forage mlkshk jean shorts keffiyeh, vaporware dreamcatcher raclette. Freegan meditation organic echo park. Four dollar toast readymade food truck mixtape knausgaard cronut, kitsch iPhone put a bird on it umami succulents flexitarian cray. Meh chicharrones tattooed fixie, literally organic pug yuccie everyday carry shaman.
   </p>
 
-<!-- Begin Modal stuff here -->
-
-<!-- Trigger the Modal -->
-<div class = 'flexImages'>
-  <img id="baliBeans0" src="images/bali_beans.jpg" class =  "decorativeImages" alt="Bali Beans, yum">
-  <img id="baliBeans1" src="images/bali_beans.jpg" class =  "decorativeImages" alt="Bali Beans, yum">
-  <img id="baliBeans2" src="images/bali_beans.jpg" class =  "decorativeImages" alt="Bali Beans, yum">
-</div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-
-
-<!-- End Modal stuff here -->
-
-</section>
+  <div class = 'flexImages'>
+    <img id="baliBeans0" src="images/bali_beans.jpg" class =  "decorativeImages" alt="Bali Beans, yum">
+    <img id="baliBeans1" src="images/bali_beans.jpg" class =  "decorativeImages" alt="Bali Beans, yum">
+    <img id="baliBeans2" src="images/bali_beans.jpg" class =  "decorativeImages" alt="Bali Beans, yum">
+  </div>
+</section>  <!-- End 'coffee' section -->
 
 <section>
   <a name="aboutus" class = 'aTitleShading'>About Us</a>
   <p>
-    Backstory on the Sanders Brothers Coffee name. Inspiration was found in this heirloom family photo. The Sanders Brothers have a 100 year heritage of business and working hard to make for themselves the American dream. Pictured here is my great great grandfather John Henry Sanders and his three sons Isaac, Herbert, and Nealy Sanders. As the men in this picture stand proudly in front of their Model-T Fords, we proudly resurrect the family business name, and work to continue the legacy by now providing customers the freshest-roasted coffee money can buy!
+    Backstory on the Sanders Brothers Coffee name. Inspiration was found in this heirloom family photo. The Sanders Brothers have a 100 year heritage of business and working hard to make for themselves the American dream. Pictured here is my great, great grandfather John Henry Sanders and his three sons Isaac, Herbert, and Nealy Sanders. As the men in this picture stand proudly in front of their Model-T Fords, we proudly resurrect the family business name, and work to continue the legacy by now providing customers the freshest-roasted coffee money can buy!
   </p>
   <img src = 'images/old_photo.jpg' alt='Sanders Brothers'/>
-</section>
+</section>  <!-- End 'about us' section -->
 
 <footer>
   <p class = footerText>&copy; Andy Million</p>
 </footer>
-
 </div> <!-- End of wrapper -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src='js/main.js'></script>
-<script>
-
-  $(function() {
-    $('.toggleNav').on('click',function() {
-      $('.flex-nav ul').toggleClass('open');
-    });
-  });
-
-</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
 
 </body>
 </html>
