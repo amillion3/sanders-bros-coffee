@@ -221,7 +221,7 @@ footer a:hover {
 .form-row textarea {
   font-size: 14px;
 
-  border: 1px solid #D6D9DC;
+  border: 1px solid #373737;
   border-radius: 3px;
 
   max-height: 100px;
@@ -234,7 +234,7 @@ footer a:hover {
 .form-row input[type='email'],
 .form-row input[type='contact-memo'] {
   background-color: #FFFFFF;
-  border: 1px solid #D6D9DC;
+  border: 1px solid #373737;
   border-radius: 3px;
   width: 100%;
   padding: 7px;
@@ -248,12 +248,16 @@ footer a:hover {
 .form-row input[type='text']:focus,
 .form-row input[type='email']:focus,
 .form-row textarea:focus {
-  background-color: yellow;
+  background-color: #F4F4F4;
 }
 
 .form-row input[type='text']:invalid, .form-row input[type='email']:invalid {
-  border: 1px solid #D55C5F;
+  border: 1px solid #373737;
   color: #D55C5F;
+}
+
+.contact-memo {
+  border: 1px solid #373737;
 }
 
 .form-row button {
