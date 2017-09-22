@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: black;
+  color: white;
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
@@ -36,6 +36,7 @@ a {
 
 a:hover {
   background:rgba(0,0,0,0.3);
+  color: #373737;
 }
 
 h1 {
@@ -46,44 +47,21 @@ h1 {
 
 p {
   color: black;
-  font-size: 0.8em;
 }
 
 ul {
   margin-left: 5%;
-  font-size: 0.8em;
 }
 
+section form input,
 section a,
 section p,
 section ul,
 section h1,
 section h2,
 section h3,
-section h4,
-section h5 {
+section h4 {
   padding: 0 3% 0 3%;
-}
-
-.contact-form {
-  padding: 0 3% 0 3%;
-}
-
-input[type=text] {
-  width: 40%;
-  font-size: .7em;
-  padding: 4px 4px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-textarea {
-  width: 40%;
-  font-size: .7em;
-  padding: 4px 4px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #d3d3d3;
 }
 
 .shipping {
@@ -96,7 +74,6 @@ textarea {
 	background: none;
 	padding: 0;
 	display: inline;
-	width: none;
 	text-align: left;
 	transition: none;
 	font-weight: normal;
@@ -208,78 +185,10 @@ footer a:hover {
   padding: 2px 2px 2px 2px;
 }
 
-/* Contact Me Form Here */
-
-.form-row {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.form-row textarea {
-  font-size: 14px;
-
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-
-  max-height: 100px;
-  margin-bottom: 10px;
-  padding: 7px;
-  resize: none;
-}
-
-.form-row input[type='text'],
-.form-row input[type='email'],
-.form-row input[type='contact-memo'] {
-  background-color: #FFFFFF;
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-  width: 100%;
-  padding: 7px;
-  font-size: 14px;
-}
-
-.form-row label {
-  margin-bottom: 15px;
-}
-
-.form-row input[type='text']:focus,
-.form-row input[type='email']:focus,
-.form-row textarea:focus {
-  background-color: yellow;
-}
-
-.form-row input[type='text']:invalid, .form-row input[type='email']:invalid {
-  border: 1px solid #D55C5F;
-  color: #D55C5F;
-}
-
-.form-row button {
-  font-size: .9em;
-  color: #FFFFFF;
-  background-color: #AC3939;
-
-  border: none;
-  border-radius: 5px;
-
-  padding: 10px 40px;
-  cursor: pointer;
-}
-
-.form-row button:hover {
-  background-color: #782727;
-}
-
-.form-submitted {
-  margin-bottom: 40px;
-}
-
 /* Flex Box Starts Here! */
 /* Flex Container */
 .flex-nav ul {
-  border:1px solid black;
+  border:2px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -322,11 +231,6 @@ footer a:hover {
     flex-direction: column;
   }
 
-  input[type=text],
-  textarea {
-    width: 100%;
-  }
-
   /* Reorder items, everything in the wrapper is order 99 */
   .wrapper > * {
     order:99;
@@ -357,27 +261,5 @@ footer a:hover {
   .coffee-box img {
     width: 100%;
     padding: 0;
-  }
-
-  .form-row {
-    flex-direction: row;
-    align-items: flex-start; /* To avoid stretching */
-    margin-bottom: 20px;
-  }
-  .form-row input[type='text'],
-  .form-row input[type='email'],
-  .form-row textarea {
-    width: 250px;
-    height: initial;
-  }
-  .form-row label {
-    text-align: right;
-    width: 120px;
-    margin-top: 7px;
-    padding-right: 20px;
-  }
-  
-  .form-row button {
-    margin: 0px 10% 0 10%;
   }
 }
