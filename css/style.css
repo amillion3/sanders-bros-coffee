@@ -227,7 +227,7 @@ textarea {
 
 .form-row input[type='text'],
 .form-row input[type='email'],
-.form-row input[type='contact-memo'] {
+.form-row input[type='message'] {
   background-color: #FFFFFF;
   border: 1px solid #373737;
   border-radius: 3px;
@@ -251,11 +251,11 @@ textarea {
   color: #D55C5F;
 }
 
-.contact-memo {
+.message {
   border: 1px solid #373737;
 }
 
-.form-row button {
+.form-row input[type='submit'] {
   font-size: .8em;
   color: #000000;
   background-color: #b2b2b2;
@@ -269,7 +269,7 @@ textarea {
   margin-left: 60px;
 }
 
-.form-row button:hover {
+.form-row input[type='submit']:hover {
   background-color: #8e8e8e;
 }
 
@@ -327,7 +327,7 @@ textarea {
 
   input[type=text],
   input[type=email],
-  textarea {
+  .form-row input[type='submit'] {
     margin: 0px 0 0 0;
   }
 
@@ -335,7 +335,7 @@ textarea {
     margin-bottom: 10px;
   }
 
-  .submit-button {
+  .button {
     width: 100%;
   }
 
