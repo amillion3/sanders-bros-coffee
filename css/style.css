@@ -36,6 +36,8 @@ a {
 
 a:hover {
   background:rgba(0,0,0,0.3);
+  color: black;
+  text-decoration: none;
 }
 
 h1 {
@@ -83,10 +85,22 @@ section h5 {
 
 img {
   width: 100%;
-  max-width: 800px;
+  /* max-width: 800px; */
 	border: 4px solid #373737;
   display: block;   /* Centers images */
   margin: 0 auto;   /* Centers images */
+}
+
+#myCarousel {
+  margin-bottom: 20px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.top-border {
+  border-top: 1px solid gray;
 }
 
 .aTitleShading:hover {   /* Adjusts hover shading for section titles */
@@ -185,6 +199,7 @@ footer a:hover {
 .coffee-box {
   align-items: center;
   padding: 2px 2px 2px 2px;
+  /* border: 1px solid red; */
 }
 
 /* Contact Me Form Here */
@@ -273,6 +288,11 @@ textarea {
   background-color: #8e8e8e;
 }
 
+section .sales {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 /* Flex Box Starts Here! */
 /* Flex Container */
 .flex-nav ul {
@@ -317,6 +337,11 @@ textarea {
   .wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .coffee-box .img-max-width{
+    max-width:128px;
+    border: none;
   }
 
   input[type=text],
@@ -366,9 +391,18 @@ textarea {
     flex-flow: row nowrap;
   }
 
+  .justify {
+    align-items: flex-start;
+  }
+
   .coffee-box img {
-    width: 100%;
+    max-width: 100%;
     padding: 0;
+  }
+
+  .coffee-box .img-max-width{
+    max-width:300px;
+    max-height:300px;
   }
 
   .form-row {
