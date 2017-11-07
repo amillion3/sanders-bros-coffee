@@ -26,7 +26,7 @@ a {
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
-  background:rgba(172,57,57,1);
+  background:#ac3939;
   padding:15px 5px;
   display: inline-block;
   width: 100%;
@@ -112,22 +112,39 @@ img {
   display: none;
 }
 
-/* BEGIN Footer for-sale.html */
-
 footer {
-  margin: 0;
-  background: none;
-  font-size: 0.6em;
-  line-height: 0.2em;
+  margin: 50px 50px;
+  padding: 0;
+}
+
+footer img {
+  border: none;
+  max-width: 50px;
+  display: inline;
+  margin: 0 auto;
+  float: none;
+}
+
+.footer-info {
   text-align: center;
+  float: clear;
+  font-size: .6em;
+  line-height: .2em;
+  padding-top: 25px;
 }
 
 footer a {
+  font-size: .6em;
+  color: black;
   background: none;
-  transition: none;
-  padding: 10px 10px 10px 10px ;
-  display: inline;
-  font-size: 0.6em;
+  max-width: 50px;
+  max-height: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding:8px 5px;
+  display: block;
+  margin: 0 auto;
 }
 
 footer a:hover {
@@ -135,65 +152,17 @@ footer a:hover {
 }
 
 .footer-social-media {
-  width: 100%;
+  float: none;
 }
 
 .footer-social-media img {
-  max-width: 50px;
-  max-height: 50px;
-  border: none;
-  display: inline;
-  margin: 0 auto;
+  display: block;
 }
 
-.footer-info img {
-  background: none;
-  max-width: 50px;
-  max-height: 50px;
-  display: inline;
-  border: none;
-}
-
-/* END Footer for-sale.html */
-
-/* BEGIN Footer index.html */
-.index-footer {
-  margin: 100px 0px;
-  background: none;
-  font-size: 0.6em;
-  line-height: 0.6em;
+.footerText {
   text-align: center;
+  font-size: .6em;
 }
-
-footer a {
-  background: none;
-  transition: none;
-  padding: 10px 10px 10px 10px ;
-  display: inline;
-  font-size: 0.6em;
-}
-
-.index-footer-social-media img {
-  max-width: 50px;
-  max-height: 50px;
-  border: none;
-  display: inline;
-  margin: 0 auto;
-}
-
-.index-footer-info {
-  padding: 50px;
-}
-
-.index-footer-info img {
-  background: none;
-  max-width: 50px;
-  max-height: 50px;
-  display: inline;
-  border: none;
-}
-
-/* END Footer index.html */
 
 .wrapper {
   max-width: 1200px;
@@ -237,8 +206,7 @@ footer a {
 }
 
 .contact {
-  padding: 20px 0 25px 0;
-  border-bottom: 2px solid black;
+  padding: 20px 0 0 0;
 }
 
 .coffee-container {
@@ -257,7 +225,6 @@ footer a {
 .coffee-box {
   align-items: center;
   padding: 2px 2px 2px 2px;
-  /* border: 1px solid red; */
 }
 
 /* Contact Me Form Here */
@@ -352,8 +319,11 @@ section .sales {
 }
 
 /* Accordion Starts Here */
-
-.half h1 {
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+}
+h1 {
   text-align: center;
 }
 .half {
@@ -368,19 +338,19 @@ section .sales {
   border-bottom: 2px solid black;
 }
 
-.half .tab {
+.tab {
   position: relative;
   margin-bottom: 1px;
   width: 100%;
   color: #fff;
   overflow: hidden;
 }
-.half input {
+input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-.half label {
+label {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
@@ -390,7 +360,7 @@ section .sales {
   cursor: pointer;
 }
 
-.half .tab-content {
+.tab-content {
   max-height: 0;
   overflow: hidden;
   background: #ddafaf;
@@ -399,15 +369,15 @@ section .sales {
   transition: max-height .35s;
 }
 
-.half .tab-content p {
+.tab-content p {
   margin: 1em;
 }
 /* :checked */
-.half input:checked ~ .tab-content {
+input:checked ~ .tab-content {
   max-height: 10em;
 }
 /* Icon */
-.half label::after {
+label::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -420,10 +390,10 @@ section .sales {
   -o-transition: all .35s;
   transition: all .35s;
 }
-.half input[type=checkbox] + label::after {
+input[type=checkbox] + label::after {
   content: "+";
 }
-.half input[type=checkbox]:checked + label::after {
+input[type=checkbox]:checked + label::after {
   transform: rotate(315deg);
 }
 /* Accordion Ends Here */
